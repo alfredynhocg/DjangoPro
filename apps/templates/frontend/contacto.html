@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block title %} <title> CONTACTOS </title> {% endblock title %}
+
+{% block pushcss %}
+    
+{% endblock pushcss %}
+
+{% block content %}
+
+<div class="brook-breadcaump-area pt--300 pt_md--250 pt_sm--200 pb--300 pb_md--250 pb_sm--200 bg_image--130 breadcaump-title-bar breadcaump-title-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcaump-inner text-center">
+                    <h2 class="heading heading-h2 font-60 text-white">Contact Us</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<main class="page-content">
+
+    <!-- Start Contact Area -->
+    <div class="bk_contact_classic bg_color--1 ptb--160 ptb-md--80 ptb-sm--80">
+        <div class="container">
+            <div class="row">
+
+                <!-- Start Single Slide -->
+                <div class="col-lg-4 col-xl-4 col-md-6 col-12 col-sm-12 wow move-up">
+                    <div class="classic-address text-center">
+                        <h4 class="heading heading-h4">Visit our studio at</h4>
+                        <div class="desc mt--15">
+                            <p class="bk_pra line-height-2-22">2005 Stokes Isle Apt. 896, <br> Vacaville 10010, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Slide -->
+
+                <!-- Start Single Slide -->
+                <div class="col-lg-4 col-xl-4 col-md-6 col-12 col-sm-12 wow move-up mt_sm--40">
+                    <div class="classic-address text-center">
+                        <h4 class="heading heading-h4">Message us</h4>
+                        <div class="desc mt--15">
+                            <p class="bk_pra line-height-2-22">info@yourdomain.com <br> (+68) 120034509</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Slide -->
+
+                <!-- Start Single Slide -->
+                <div class="col-lg-4 col-xl-4 col-md-6 col-12 col-sm-12 wow move-up mt_md--40 mt_sm--40">
+                    <div class="classic-address text-center">
+                        <h4 class="heading heading-h4">Follow us</h4>
+                        <div class="desc mt--15">
+                            <ul class="social-icon icon-solid-rounded icon-size-medium text-center move-up wow">
+                                <li class="facebook"><a href="#" class="link" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#" class="link" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li class="instagram"><a href="#" class="link" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                <li class="dribbble"><a href="#" class="link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+                                <li class="pinterest"><a href="#" class="link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Slide -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Area -->
+
+    <!-- Start Contact Form  -->
+    <div class="brook-contact-form-area ptb--150 ptb-md--80 ptb-sm--60 bg_color--5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brook-section-title text-center mb--40">
+                        <h4 class="heading heading-h4">Send us a message</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="contact-form" >
+                        <form id="contact-form" action="http://whizthemes.com/shohel/php/mail.php">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <input name="con_name" type="text" placeholder="Name *">
+                                </div>
+
+                                <div class="col-lg-12 mt--30">
+                                    <input name="con_email" type="email" placeholder="Email *">
+                                </div>
+
+                                <div class="col-lg-12 mt--30">
+                                    <input type="text" placeholder="Phone number">
+                                </div>
+
+                                <div class="col-lg-12 mt--30">
+                                    <textarea name="con_message" placeholder="Your message"></textarea>
+                                </div>
+
+                                <div class="col-lg-12 mt--30">
+                                    <input type="submit" value="Send message">
+                                    <p class="form-messege"></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Form  -->
+
+    <!-- Start Call To Action -->
+    <div class="brook-call-to-action bg_color--41 ptb--70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-sm-8 col-12">
+                    <div class="call-content text-center text-sm-start">
+                        <h3 class="heading heading-h3 text-white">We’re motivated by the desire to achieve.</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-12">
+                    <div class="call-btn text-center text-sm-end mt_mobile--20">
+                        <a class="brook-btn bk-btn-white text-theme btn-sd-size btn-rounded" href="#">Find out
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Call To Action -->
+
+</main>
+{% endblock content %}
+
+{% block pushjs %}
+    
+{% endblock pushjs %}

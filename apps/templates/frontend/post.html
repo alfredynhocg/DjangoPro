@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %} 
+    <title>Publicaciones</title>
+{% endblock title %}
+
+{% block pushcss %}
+{% endblock pushcss %}
+
+{% block content %}
+<div class="breadcaump-area pt--260 pb--80 pt_md--200 pt_sm--150 bg_color--5 breadcaump-title-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcaump-inner text-center">
+                    <h1 class="heading heading-h1">Publicaciones Django</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="page-content">
+
+    <div class="blog-creative-area bg_color--5 pt--70 pb--100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 pr--100 pr_lg--15 pr_md--15 pr_sm--15">
+                    {% for post in object_list %}
+                    <div class="creative-blog wow move-up">
+                        <div class="blog-grid blog-creative">
+                            <div class="post-thumb">
+                                <a href="{% url 'index:post-detail' post.id %}">
+                                    <img src="{% static 'frontend/img/blog/post.jpg' %}" alt="Multipurpose template">
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-inner">
+                                    <h4 class="heading heading-h4"><a href="{% url 'index:post-detail' post.id %}">
+                                        {{ post.title }}
+                                    </a></h4>
+                                    <div class="post-meta">
+                                        <div class="post-date">Django-Blog</div>
+                                        <div class="post-category"><a href="#">Django</a></div>
+                                    </div>
+                                    <div class="desc pl--60 pl_md--20 pl_sm--10 mt--20">
+                                        <p class="bk_pra">{{ post.content }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+
+                </div>
+
+                <div class="col-lg-4 pl--40 pl_lg--15 pl_md--15 pl_sm--15 mt_md--40 mt_sm--40">
+                    <!-- Start Sidebar Area -->
+                    <div class="blog-sidebar-container">
+                        <div class="blog-sidebar-wrapper">
+
+                            <!-- Start Single Widget -->
+                            <div class="bl-sidebar search">
+                                <h5 class="widget-title">Facebook</h5>
+                                <div class="fb-page" data-href="https://www.facebook.com/incosbot" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/incosbot" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/incosbot">IncosBot</a></blockquote></div>
+                            </div>
+                            <!-- End Single Widget -->
+
+                        </div>
+                    </div>
+                    <!-- End Sidebar Area -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End BLog Area -->
+
+
+</main>
+{% endblock content %}
+
+
+{% block pushjs %}
+
+<div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v15.0&appId=383264375339567&autoLogAppEvents=1" nonce="8EsTTFYb"></script>
+{% endblock pushjs %}

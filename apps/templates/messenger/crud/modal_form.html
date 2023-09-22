@@ -1,0 +1,111 @@
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <div class="modal-title"><div class="mb-30">
+        <h6>Agregar Usuario</h6>
+        <h2 id="messagepro">{{ message }}</h2>
+        <form v-on:submit.prevent="addArticle()">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="user_id"> user id </label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="user_id"
+                        v-model="newArticle.user_id"
+                        required="required" >
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="first_name">First name</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="first_name"
+                        v-model="newArticle.first_name"
+                        required="required" >
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="last_name">Last name</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="last_name"
+                        v-model="newArticle.last_name"
+                        required="required" >
+
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="gender">Gender</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="gender"
+                        v-model="newArticle.gender"
+                        required="required" >
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="timezone">Timezone</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="timezone"
+                        v-model="newArticle.timezone"
+                        required="required" >
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="image">Image</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="image"
+                        v-model="newArticle.image"
+                        required="required" >
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label for="date">date</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="date"
+                        v-model="newArticle.date"
+                        required="required" >
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-primary" type="submit" @click="savePost()">Submit form</button>
+        </form>                        
+        </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times,</span>
+        </button>
+    </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,19 @@
+{% load static i18n %}
+<nav class="page_nav">
+    <ul class="mainmenu">
+
+        <li class="lavel-1"><a href="{% url 'index:view-landing' %}"><span>INICIO</span></a></li>
+
+        <li class="lavel-1"><a href="{% url 'index:view-blog' %}"><span>BLOG</span></a></li>
+
+        <li class="lavel-1 with--drop slide-dropdown"><a href="#"><span>LIBROS</span></a>
+            <ul class="dropdown__menu">
+                <li><a href=""><span>AUTORES</span></a></li>
+                <li><a href=""><span>PUBLICACIONES</span></a></li>
+            </ul>
+        </li>
+
+        <li class="lavel-1"><a href="{% url 'index:view-contact' %}"><span>CONTACTOS</span></a></li>
+
+    </ul>
+</nav>

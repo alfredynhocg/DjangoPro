@@ -1,0 +1,42 @@
+{% extends "base_admin.html" %}
+
+{% load static i18n %}
+
+{% block title %} <title> Listado de Categoria </title> {% endblock title %}
+
+{% block content %}
+
+<div class="card card-statistics mb-30">
+    <div class="card-body">
+      <h5 class="card-title">Crear Categoria</h5>
+
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Guardar</button>
+
+        {% comment %} <input type="submit" value="GUARDAR"> {% endcomment %}
+    </form>
+
+      {% comment %} <form>
+        <div class="mb-3">
+          <label class="form-label" for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> {% endcomment %}
+    </div>
+  </div>
+
+
+
+{% endblock content %}

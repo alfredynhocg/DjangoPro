@@ -1,0 +1,82 @@
+<title> Listado de Publicaciones </title>
+<h1>listado de categorias</h1>
+
+<img src="https://static.djangoproject.com/img/logos/django-logo-positive.png" width="200" heigth="200">
+
+<a href="{% url 'post:crear-post' %}" type="button"> Crear post </a>
+
+{% if messages %}
+<ul class="messages list-group mb-3">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }} list-group-item list-group-item-primary"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<table border="1">
+    <tr>
+      <td>Id</td>
+      <td>Nombre</td>
+      <td>Estado</td>
+      <td>Modificar</td>
+      <td>Eliminar</td>
+    </tr>
+
+    {% if object_list %}
+        {% for post in object_list %}
+            <tr>
+            <td>{{ post.id }}</td>
+            <td>{{ post.title|upper }}</td>
+            <td>
+                {% if post.publish == True %}
+                    <strong> Publico </strong>
+                {% else %}
+                    <strong> No Publico </strong>
+                {% endif%}
+            </td>
+
+            <td> 
+                <a href="" type="button"> Modificar </a>
+            </td>
+            <td>
+                <a href="" type="button"> Eliminar </a>
+            </td>
+            </tr>
+        {% endfor %}
+    {% else %}
+    <h3> SIN REGISTRO EN LA BASE DE DATOS</h3>
+    {% endif %}
+  </table>
+
+
+{% comment %} {% for categoria in object_list %}
+    <span> {{ categoria.name }} 
+        {% if categoria.publish == True %}
+            <strong> Publico </strong>
+        {% else %}
+            <strong> No Publico </strong>
+        {% endif%}
+    </span> <br>
+{% endfor %} {% endcomment %}
+{% comment %} <ul>
+
+    {% if messages %}
+    <ul class="messages list-group mb-3">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }} list-group-item list-group-item-primary"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+{% for article in object_list %}
+    <li>{{ article.status }} - {{ article.name }}</li>
+{% empty %}
+    {% for categoria in categorias %}
+        <li>{{ categoria.status }} - {{ categoria.name }} 
+            <a href="{% url 'categoria:modificar-registro' categoria.id %}">-> EDITAR</a>
+            <a href="{% url 'categoria:eliminar-registro' categoria.id %}">-> ELIMINAR</a>
+        </li>
+    {% endfor %}
+
+{% endfor %}
+</ul> {% endcomment %}

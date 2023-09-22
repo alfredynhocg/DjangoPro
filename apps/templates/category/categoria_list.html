@@ -1,0 +1,168 @@
+{% extends "base_admin.html" %}
+
+{% load static i18n %}
+
+{% block title %} <title> Listado de Categoria </title> {% endblock title %}
+
+{% block pushcss %}
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/toast/css/iziToast.min.css' %}" />
+{% endblock pushcss %}
+
+{% block content %}
+
+{% if messages %}
+
+<ul class="messages list-group mb-3">
+    {% for message in messages %}
+        {{ message }}
+    {% comment %} <li{% if message.tags %} class="{{ message.tags }} list-group-item list-group-item-primary"{% endif %}>{{ message }}</li> {% endcomment %}
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+<div class="page-title">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4 class="mb-0">Listado de Categorias </h4>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb pt-0 pe-0 float-start float-sm-end ">
+          <li class="breadcrumb-item"><a href="#" class="default-color">Dashboard</a></li>
+          <li class="breadcrumb-item active">Categorias </li>
+        </ol>
+      </div>
+
+      <div class="card card-statistics mb-30">
+        <div class="card-body">
+            <a class="button x-small" href="{% url 'category:crear-cat' %}">Crear Nueva Categoria</a>
+        </div>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xl-12 mb-30">
+      <div class="card card-statistics h-100">
+        <div class="card-body">
+          <div class="d-block d-md-flex justify-content-between">
+          <div class="table-responsive mt-15">
+            <table class="table center-aligned-table mb-0">
+              <thead>
+                <tr class="text-dark">
+                  <th>id</th>
+                  <th>Nombre</th>
+                  <th>Slug</th>
+                  <th>Estado</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+
+                {% if object_list %}
+                    {% for categoria in object_list %}
+                        <tr>
+                        <td>{{ categoria.id }}</td>
+                        <td>{{ categoria.name|upper }}</td>
+                        <td>{{ categoria.slug }}</td>
+                        {% if categoria.publish == True %}
+                            <td><label class="badge bg-success">ACTIVO</label></td>
+                        {% else %}
+                            <td><label class="badge bg-danger">INACTIVO</label></td>
+                        {% endif %}
+                        <td><a href="#" class="btn btn-outline-warning btn-sm">Editar</a></td>
+                        <td><a href="#" class="btn btn-outline-danger btn-sm">Eliminar</a></td>
+                        </tr>
+                    {% endfor %}
+                {% endif %}
+
+              </tbody>
+            </table>
+
+            <div class="pagination">
+                <span class="step-links">
+                    {% if page_obj.has_previous %}
+                        {% comment %} <a href="?page=1">&laquo; first</a> {% endcomment %}
+                        <a href="?page=1" type="button" class="btn btn-primary btn-sm">&laquo; Primero</a>
+
+                        {% comment %} <a href="?page={{ page_obj.previous_page_number }}">previous</a> {% endcomment %}
+                        <a href="?page={{ page_obj.previous_page_number }}" type="button" class="btn btn-warning btn-sm">Anterior</a>
+
+                    {% endif %}
+            
+                    <span class="current">
+                        Pagina <strong> {{ page_obj.number }}</strong> de <strong> {{ page_obj.paginator.num_pages }}. </strong>
+                    </span>
+            
+                    {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}" type="button" class="btn btn-primary btn-sm">Siguiente</a>
+                        <a href="?page={{ page_obj.paginator.num_pages }}" type="button" class="btn btn-warning btn-sm">Ultimo</a>
+
+                        {% comment %} <a href="?page={{ page_obj.next_page_number }}">next</a>
+                        <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a> {% endcomment %}
+                    {% endif %}
+                </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+{% endblock content%}
+
+{% block pushjs %}
+    <script src="{% static 'admin/toast/js/iziToast.min.js' %}"></script>
+
+    {% if messages %}
+        {% for message in messages %}
+            {% comment %} {% if message == 'CREADO' %} {% endcomment %}
+                <script>
+                    iziToast.success({
+                        position: 'center', 
+                        title: 'OK',
+                        transitionIn: 'flipInX',
+                        timeout: 10000,
+                        message: '{{ message|safe }}',
+                    });            
+                </script>
+            {% comment %} {% endif %} {% endcomment %}
+        {% endfor %}  
+    {% endif %}
+
+{% endblock pushjs %}
+{% comment %} {% for categoria in object_list %}
+    <span> {{ categoria.name }} 
+        {% if categoria.publish == True %}
+            <strong> Publico </strong>
+        {% else %}
+            <strong> No Publico </strong>
+        {% endif%}
+    </span> <br>
+{% endfor %} {% endcomment %}
+{% comment %} <ul>
+
+    {% if messages %}
+    <ul class="messages list-group mb-3">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }} list-group-item list-group-item-primary"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+{% for article in object_list %}
+    <li>{{ article.status }} - {{ article.name }}</li>
+{% empty %}
+    {% for categoria in categorias %}
+        <li>{{ categoria.status }} - {{ categoria.name }} 
+            <a href="{% url 'categoria:modificar-registro' categoria.id %}">-> EDITAR</a>
+            <a href="{% url 'categoria:eliminar-registro' categoria.id %}">-> ELIMINAR</a>
+        </li>
+    {% endfor %}
+
+{% endfor %}
+</ul> {% endcomment %}
