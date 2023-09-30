@@ -1,0 +1,818 @@
+@media(max-width: 1200px) {
+	.owl-carousel .owl-nav > button.owl-prev{
+		left: 40%;
+		top: 108%;
+	}
+	.owl-carousel .owl-nav > button.owl-next{
+		left: 47%;
+    	top: 108%;
+	}
+}
+@media(max-width: 1024px) {
+	p {
+		font-size: 1rem;
+	}
+	.special-ingradient{
+		flex-wrap: wrap;
+	}
+	.pl-130{
+		padding-left: 0px;
+	}
+	.table-title h2{
+		    width: 62%;
+    font-size: 45px;
+	}
+	.slider-txt h2 span{
+		font-size: 3.8rem;
+    	line-height: 45px;
+	}
+	.site-menu-btns {
+	    margin-left: 3rem;
+	}
+	.theme-btn,
+	.theme-btn-secondary {
+		padding: 0.8rem 2rem;
+    	font-size: 1rem;
+    	font-weight: 500;
+
+	}
+	.sing-recipe-content {
+		padding-left: 0;
+	}
+	.recipe-carousel-item {
+		padding: 2.5rem 2rem;
+	}
+	.recipe-carousel .owl-item.active.center::after {
+		left: -40px;
+	}
+	.top-chefs {
+		padding: 0;
+	}
+	.chef-box-content img {
+	    max-width: 168px;
+	}
+	.chef-box-info .fs-26 {
+	    font-size: 1.5rem;
+	}
+	.blog-txt {
+	    padding: 2rem 1.5rem;
+	}
+	.blog-meta {
+	    padding-right: 1.5rem;
+	    padding-left: 1.5rem;
+	}
+	.folow-us > span {
+	    display: block;
+	    padding-bottom: 10px;
+	}
+}
+
+@media(max-width: 980px) {
+	.nav-menu {
+	display: block;
+}
+.book-table {
+    padding: 15% 15% !important;
+}
+.branch-item{
+		margin-top: 10px;
+	}
+	.branchs-boxes .row > div.col-lg-6:nth-child(3), .branchs-boxes .row > div.col-lg-6:nth-child(4){
+		margin-top: 0px;
+	}
+.slider-txt h2{
+	font-size: 50px;
+	line-height: 45px;
+}
+.recipe-cokng-info-2{
+	flex-wrap: wrap;
+	    padding: 30px;
+}
+.pb-110{
+		padding-bottom: 50px;
+	}
+.pt-110{
+		padding-top: 70px;
+	}
+.special-ingradient{
+	width: 100%;
+    display: block !important;
+}
+.recipe-cokng-info-2 li{
+	padding-bottom: 10px;
+}
+	.main-slider2 .kenburn-text h2 {
+    	font-size: 4.5rem;
+	}
+	.card-menu-inner{
+		    margin-top: 20px;
+	}
+	.sec-heading h2 {
+    	font-size: 35px;
+    	line-height: 30px;
+	}
+	.chef-personal-info{
+		padding: 1.875rem 1rem;
+	}
+	#comments{
+		padding: 2rem;
+	}
+	 .nav-menu {
+	    width: 0px;
+	    background-color: #fff;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    z-index: 9999;
+	    height: 100%;
+	    transition-duration: 500ms;
+	    padding: 0;
+	    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+	    overflow-y: auto;
+	    padding-top: 100px;
+	    transition: .3s all ease-in-out;
+	}
+	
+	.food-cat-box {
+	    margin-bottom: 30px;
+	}
+	.sing-recipe-img.wow.fadeInLeft {
+	    display: block;
+	    margin: 0 auto;
+	}
+	.fs-45 {
+	    font-size: 2.4rem;
+	}
+	.recipe-carousel .owl-dots span {
+		background-color: #000;
+	}
+	.vid-area {
+	    margin-top: 40px;
+	}
+	.recipe-tabs .nav-pills li a {
+		padding: 0 30px;
+	}
+	.recipe-tabs .tab-box-content {
+		padding: 3rem;
+	}
+	.tab-recipe-img img {
+	    display: block;
+	    margin: 30px auto 0;
+	}
+	.tab-box-item img {
+	    width: 100%;
+	}
+	.tab-box-item {
+		margin-bottom: 30px;
+	}
+	.chef-box {
+		margin-bottom: 30px;
+	}
+	.chef-bg::before {
+		left: 20px;
+	}
+	.chef-box-info {
+		padding-right: 15px;
+	}
+	.pt-60 {
+	    padding-top: 2.8rem;
+	}
+	.blog-item {
+	    margin-bottom: 30px;
+	}
+	footer .widget {
+	    margin-bottom: 30px;
+	}
+	.footer-btm {
+	    padding-top: 0rem;
+	}
+}
+@media(max-width: 768px) {
+	.slider-txt{
+		font-size: 2rem;
+	}
+	.main-slider2 .kenburn-text h2 {
+    	font-size: 3rem;
+	}
+	.main-slider2 .kenburn-text p{
+		    font-size: 18px;
+	}
+	.contact-bar{
+		padding: 1.875rem 0px;
+	}
+	.chef-title {
+		margin-top: 25px;
+	}
+	.chef-meta.mt-30{
+		margin-top: 0px;
+	}
+	.article-top-content + p {
+    	margin-top: 0.75rem;
+	}
+	.testi-avatar{
+		bottom: 10px;
+	}
+	.becom-membr{
+		height: 384px;
+	    width: 389px;
+	}
+	.chef-box-content a {
+  		height: 2.5rem;
+  		width: 2.5rem;
+  		line-height: 2.5rem;
+	}
+	.theme-btn, .theme-btn-secondary {
+    	padding: 0.5rem 1rem;
+    	font-size: 0.8rem;
+	}
+	select.minimal{
+				background-image: linear-gradient(
+				45deg
+				, transparent 50%, gray 50%), linear-gradient(
+				135deg
+				, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+	}
+	input[type="text"], input[type="email"], input[type="date"], input[type="time"], textarea, select.minimal{
+		    padding: 0.3rem 2rem;
+	}
+	.book-table {
+    	padding: 8% 15% !important;
+	}
+	.blog-txt h3 {
+    	font-size: 25px;
+    	margin-top: 0px !important;
+	}
+	.single-rec-desc h2{
+		font-size: 33px;
+	}
+	.owl-carousel .owl-nav > button.owl-prev{
+		left: 33%;
+    	top: 95%;
+	}
+	.owl-carousel .owl-nav > button.owl-next{
+		left: 47%;
+    	top: 95%;
+	}
+	.resturant-timng{
+		margin-bottom: 10px;
+	}
+	.slider-txt h2 {
+    	font-size: 45px;
+    	line-height: 40px;
+	}
+	.gradient-list li{
+		padding-bottom: 15px;
+	}
+	.bg-image-2 {
+    	padding: 70px 0px;
+	}
+	aside .widget{
+		margin-top: 50px;
+	}
+	.baner-name h2{
+		font-size: 40px;
+	}
+	.blog-list-txt h3{
+		font-size: 22px;
+    	font-weight: 500;
+	}
+	.pb-110{
+		padding-bottom: 50px;
+	}
+	.contact-icon-title{
+		font-size: 35px;
+	}
+	.pt-110{
+		padding-top: 50px;
+	}
+	.special-ingradient{
+		padding:10px;
+	}
+	.recipy-content h2{
+		    font-size: 50px;
+	}
+	.recipy-content h2 {
+    	font-size: 55px;
+	}
+	.chef-special .recipe-cokng-info{
+		flex-wrap: wrap;
+	}
+	.recipies-vid-list{
+		padding-top: 20px;
+	}
+	.quote-sec p {
+    	line-height: 2rem;
+    	max-width: 100%;
+    	margin: auto;
+    	font-size: 23px;
+	}
+	.abt-resturant h2 {
+    	font-size: 35px;
+    	line-height: 20px;
+	}
+	.main-slider2 .slide-image{
+		height: 500px;
+	}
+	.main-slider2 .kenburn-text p{
+		max-width: 85%;
+	}
+	.recipe-list-item figure{
+		position: relative;
+	}
+	.recipe-carousel-item {
+    	padding: 1.5rem 1rem;
+	}
+	.sec-heading h2 {
+    	font-size: 32px;
+    	line-height: 25px;
+    	margin-bottom: 25px;
+	}
+	.card-menu-inner{
+		    padding: 25px;
+	}
+	.comment-date{
+		flex-wrap: wrap;
+	}
+	.recipe-gal  img{
+		width: 100%;
+	}
+	.recipe-info-box{
+		padding-left: 0rem;
+		margin-left: 0rem;
+	}
+	.recipe-info-box{
+		padding: 1rem;
+		padding-left: 1rem;
+	}
+	.recipe-list-item figure{
+		position: relative;
+    	top: 130px;
+    	text-align: center;
+	}
+	.comment-text {
+    	padding: 16px;
+	}
+	.history-txt{
+		    padding-bottom: 15px;
+	}
+	.recipes-wrapper .recipe-carousel-item{
+		padding: 20px;
+	}
+	.history-detail p{
+		padding-bottom: 10px;
+	}
+	.history-lst{
+		margin-top: 0px;
+		padding: 1.375rem 1.25rem;
+	}
+	.woocommerce-Reviews{
+		flex-wrap: wrap;
+	}
+	.history-lst a{
+		font-size: 16px;
+	}
+	.history-lst span{
+		font-size: 20px;
+	}
+	.becom-membr h2{
+		    font-size: 2.125rem;
+	}
+	.bcom-membr input{
+		height: 1.875rem;
+	}
+	.bcom-membr button.theme-btn{
+		height: 1.875rem;s
+	}
+	.history-txt{
+		text-align: center;
+	}
+	.history-txt span {
+    	font-size: 50px;
+	}
+	.history-item:nth-child(2n) .history-txt{
+		    padding-right:0rem;
+	}
+	.becom-membr{
+		height: 400px;
+    	width: 400px;
+    	margin: auto;
+	}
+	.py-110 {
+    	padding: 2.875rem 0;
+	}
+	.contact-social {
+		padding-bottom: 20px;
+	} 
+	.contact-bar{
+		position: relative;
+    	left: 0;
+    	padding-bottom: 0 !important;
+	}
+	.article-content{
+ 		padding: 1rem;
+	}
+	.comment-meta h5 {
+    	font-size: 27px;
+	}
+	.article-content{
+		margin-top: 0px;
+	}
+	.comments-thread .children{
+		padding-left: 0px;
+	}
+	.no-bottom{
+		padding-bottom: 0 !important;
+	}
+	.recipe-carousel-item{
+		text-align: center;
+	}
+	.slider-txt h2 span{
+		font-size: 3.5rem;
+	}
+	.recipe-info > a{
+		margin-top: 1rem;
+	}
+	.sec-space {
+		padding-top: 3rem;
+    	padding-bottom: 3rem;
+	}
+	.slider-txt{
+		padding-top: 100px;
+	}
+	.slider-txt span{
+		margin-bottom: 0 !important;
+	}
+	.widget h4{
+		margin-bottom: 25px;
+	}
+	.footer-menu{
+		flex-wrap: wrap;
+	}
+	.recipe-descrip{
+		max-width: 90%;
+	}
+	.table-img{
+		width: 100%;
+		height: 100%;
+	}
+	.table-title h2{
+		width: 100%;
+		font-size: 37px;
+	}
+}
+@media(max-width: 480px) {
+	.food-cat-inner h4 {
+		font-size: 1rem;
+	}
+	.single-rec-desc a{
+		margin-top: 0px !important;
+	}
+	.bcom-membr{
+		margin-top: .6rem;
+	}
+	.book-table .mt-3{
+		margin-top: 0px !important;
+	}
+	.book-tble-content p{
+		font-size: 17px;
+	}
+	.testi-item p{
+		font-size: 18px;
+	}
+	.owl-carousel .owl-nav > button.owl-next{
+		left: 50%;
+	}
+	.blog-list-desc{
+		padding: 20px;
+	}
+	.widget h4 {
+    	margin-bottom: 4px;
+	}
+	.slider-txt h2 {
+    	font-size: 35px;
+    	line-height: 30px;
+	}
+	.reci-feature-vido figure > div{
+		    bottom: 0;
+	}
+	.abt-resturant span {
+    	font-size: 18px;
+	}
+	.recipy-table h2{
+		font-size: 30px;
+	}
+	.recipy-style2 p{
+		max-width: 100%;
+    	text-align: center;
+	}
+	.recipe-meta{
+		flex-wrap: wrap;
+	}
+	.recipe-meta > span{
+		padding-left: 0px;
+	}
+	.table-title h2 {
+    	width: 95%;
+    	font-size: 25px;
+    	line-height: 28px;
+	}
+	.bg-image-2 {
+    	padding: 50px 0px;
+	}
+	.recipe-list-item .recipe-title{
+		width: 100%;
+	}
+	.history-txt span {
+    	font-size: 40px;
+	}
+	.history-lst {
+    	padding: 1.375rem 0.6rem;
+	}
+	.history-item:nth-child(2n+1) .history-txt {
+    	padding-left: 0;
+    	padding-right: 0;
+	}
+	.history-txt{
+		font-size: 25px;
+	}
+	aside .widget {
+    	padding: 1rem;
+	}	
+	.pagination li.page-on{
+		margin: 0 0.8rem;
+	}
+	.pagination{
+		align-items: center;
+    	flex-wrap: wrap;
+	}
+	.pagination li.next-page a{
+		margin-left: 0px;
+	}
+	.pagination li a{
+		height: 1.4375rem;
+    	width: 1.4375rem;
+    	font-size: 0.7rem;
+    	line-height: 1.4375rem;
+	}
+	.pagination li.prev-page a{
+		margin-right: 0;
+	}
+	.article-top-content h2{
+		font-size: 25px;
+	}
+	.article-detail-meta{
+		flex-wrap: wrap;
+	}
+	.contact-icon-title {
+    	font-size: 30px;
+    	line-height: 35px;
+	}
+	.fs-50{
+		font-size: 30px;
+	}
+	.article-top-content + p {
+    	margin-top: 1rem;
+	}
+	.comments-thread h4 {
+    	font-size: 33px;
+	}
+	.comment-box {
+    	background-color: #fff;
+    	padding: 1rem;
+    	margin-bottom: 2.375rem;
+	}
+	.reply-comments h4 {
+ 	   	font-size: 32px;
+	}
+	.widget h4 {
+    	font-size: 30px;
+	}
+	.blog-quote p {
+    	padding-bottom: 30px;
+    	font-size: 22px !important;
+    	line-height: 33px !important;
+	}
+	.widget h4 {
+    	font-size: 30px;
+	}
+	.special-ingradient h3 {
+    	font-size: 30px;
+	}
+	.recipy-content h2 {
+    	font-size: 40px;
+	}
+	.chef-title{
+		flex-wrap: wrap;
+	}
+	.chef-title div{
+		width: 100%;
+	}
+	.branch-item{
+		margin-bottom: 10px;
+	}
+	.owl-carousel .owl-item img{
+		padding-bottom: 10px;
+	}
+	.abt-resturant h2 {
+    	font-size: 30px;
+    	line-height: 33px;
+	}
+	.main-slider2 .kenburn-text h2 {
+    	font-size: 3.5rem;
+	}
+	.kenburn-text h3{
+		font-size: 22px;
+	}
+	.abt-resturant p{
+		padding-right: 0 !important;
+	}
+	.widget h4 {
+    	font-size: 30px;
+	}
+	.leave-review{
+		padding: 1rem;
+	}
+	.becom-membr{
+		height: 320px;
+    	width: 320px;
+	}
+	.leave-review{
+		text-align: center;
+	}
+	.signup-options {
+		flex-wrap: wrap;
+	}
+	.social-connect{
+		padding-top: 15px;
+	}
+	.becom-membr h2 {
+    	font-size: 1.5rem;
+	}
+	.membr-contnt {
+    	padding: 24% 13%;
+	}
+	.chef-contct-info {
+		padding-top: 0px;
+	}
+	.reply-comments h4{
+		text-align: center;
+		font-size: 32px;
+	}
+	.comment-meta h5 {
+    	font-size: 22px;
+	}
+	.baner-name h2{
+		font-size: 2rem;
+	}
+	.comments-thread h4 {
+    	font-size: 32px;
+    	text-align: center;
+	}
+	.blog-quote p{
+		font-size: 25px !important;
+    	line-height: 35px !important;
+	}
+	.tab-recipe-desc h2{
+		font-size: 27px;
+		text-align: center;
+		line-height: 30px;
+	}
+	.tab-box-item{
+		text-align: center;
+	}
+	.slider-txt h2 span {
+    	font-size: 2.5rem;
+    	line-height: 30px;
+	}
+	.newsletter-sec h2 {
+    	font-size: 32px;
+    	line-height: 30px;
+	}
+	.sec-heading h2 {
+    	font-size: 30px;
+	}
+	.food-cat-inner {
+		padding: 2.5rem 1rem;
+	}
+	.slider-txt{
+		padding-top: 100px;
+		text-align: center;
+	}
+	.single-rec-desc{
+		text-align: center;
+	}
+	.recipe-carousel-item {
+    	padding: 0rem 2rem;
+	}
+	.single-rec-desc h2{
+		    font-size: 32px;
+    line-height: 34px;
+	}
+	.slider-txt p{
+		margin: auto;
+	}
+	.food-cat-inner > i {
+		font-size: 4rem;
+		line-height: normal;
+	}
+	.sec-space {
+	    padding-top: 3rem;
+	    padding-bottom: 3rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.single-rec-desc {
+	    width: 100%;
+	}
+	.sing-smal-info {
+		position: relative;
+		margin-top: 30px;
+	}
+	.sing-smal-info::before,
+	.sing-smal-info::after {
+		display: none;
+	}
+	.fs-45 {
+	    font-size: 2rem;
+	}
+	.sec-heading .fs-20 {
+	    font-size: 1rem;
+	    padding-bottom: 10px;
+	}
+	.book-tble-content > .h1 {
+	    font-size: 1.8rem !important;
+	    line-height: 30px;
+	}
+	.recipe-tabs .nav-pills li i {
+	    font-size: 1.8rem;
+	}
+	.recipe-tabs .nav-pills li a {
+	    padding: 0 16px;
+	}
+	.recipe-tabs .nav-pills li span {
+	    display: none !important;
+	}
+	.recipe-tabs .nav-pills li a.active {
+		padding: 10px 15px;
+	}
+	.recipe-tabs .nav-pills li a.active::after {
+		display: none;
+	}
+	.recipe-tabs .tab-box-content {
+	    padding: 3rem 1.8rem;
+	}
+	.recipe-ingre ul {
+	    -moz-column-count: 1;
+	    -moz-column-gap: 20px;
+	    -webkit-column-count: 1;
+	    column-count: 1;
+	}
+	.theme-btn, .theme-btn-secondary {
+	    padding: 0.7rem 2rem;
+	    font-size: 0.85rem;
+	}
+	.theme-btn-secondary i {
+		font-size: 1rem;
+	}
+	.chef-bg::before {
+	    height: 100%;
+	    width: 100%;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    top: 0;
+	    border-radius: 0;
+	}
+	.chef-contct-info span {
+	    font-size: 1rem;
+	}
+	.article-detail p{
+		font-size: 17px;
+    	line-height: 24px;
+    	padding-bottom: 20px;
+	}
+}
+@media(max-width: 375px) {
+	.owl-carousel .owl-nav > button.owl-next{
+		left: 50%;
+	}
+	.owl-carousel .owl-nav > button.owl-prev, .owl-carousel .owl-nav > button.owl-next{
+		height: 3rem;
+    	width: 3rem;
+	}
+	.testi-avatar img {
+    	width: 7rem !important;
+    	height: 7rem;
+	}
+	.chef-box-info .fs-26 {
+    	font-size: 1.4rem;
+	}
+	.blog-quote p{
+	    font-size: 17px !important;
+    	line-height: 26px !important;
+	}
+	.card-menu-inner h3{
+		font-size: 1.5rem;
+	}
+}

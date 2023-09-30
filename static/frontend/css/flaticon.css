@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../webfonts/Flaticon.eot");
+  src: url("../webfonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../webfonts/Flaticon.woff2") format("woff2"),
+       url("../webfonts/flaticonfonts/Flaticon.woff") format("woff"),
+       url("../webfonts/Flaticon.ttf") format("truetype"),
+       url("../webfonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../webfonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-buy:before { content: "\f100"; }
+.flaticon-fish:before { content: "\f101"; }
+.flaticon-meat:before { content: "\f102"; }
+.flaticon-muffin:before { content: "\f103"; }
+.flaticon-radish:before { content: "\f104"; }
+.flaticon-pasta:before { content: "\f105"; }
+.flaticon-clock:before { content: "\f106"; }
+.flaticon-gps:before { content: "\f107"; }
+.flaticon-bathroom:before { content: "\f108"; }
+.flaticon-car:before { content: "\f109"; }
+.flaticon-wifi:before { content: "\f10a"; }
+.flaticon-phone:before { content: "\f10b"; }
+.flaticon-plate:before { content: "\f10c"; }
+.flaticon-plate-1:before { content: "\f10d"; }
+.flaticon-login:before { content: "\f10e"; }
+.flaticon-chef:before { content: "\f10f"; }
+.flaticon-chef-1:before { content: "\f110"; }
+.flaticon-flag:before { content: "\f111"; }
+.flaticon-phone-1:before { content: "\f112"; }
+.flaticon-gmail:before { content: "\f113"; }
+.flaticon-mail:before { content: "\f114"; }
+.flaticon-reload:before { content: "\f115"; }
+.flaticon-salad:before { content: "\f116"; }
+.flaticon-food:before { content: "\f117"; }
+.flaticon-stair:before { content: "\f118"; }
+.flaticon-cheddar:before { content: "\f119"; }
+.flaticon-kebab:before { content: "\f11a"; }
+.flaticon-next:before { content: "\f11b"; }
+.flaticon-check:before { content: "\f11c"; }
+.flaticon-chef-2:before { content: "\f11d"; }
+.flaticon-multimedia:before { content: "\f11e"; }
+.flaticon-heart:before { content: "\f11f"; }
+.flaticon-comment:before { content: "\f120"; }
+.flaticon-next-1:before { content: "\f121"; }

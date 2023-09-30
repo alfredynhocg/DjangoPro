@@ -1,751 +1,97 @@
 {% extends 'base.html' %}
 {% load static i18n %}
-{% block title %}<title>Django Blog</title> {% endblock title %}
+{% block title %}<title>Qulilita</title> {% endblock title %}
 
 {% block content %}
 
     {% include "partials/slider.html" %}
 
-    <main class="page-content">
-
-        <!-- Start Call To Action -->
-        <div class="brook-call-to-action bg_color--24 ptb--40">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-6 col-12">
-                        <div class="call-content essential-cta-content text-center text-sm-start">
-                            <h3 class="text-white wow move-up">Let’s create something extraordinary together.</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="call-btn text-center text-md-end mt_mobile--20 wow move-up">
-                            <a class="brook-btn bk-btn-white text-theme btn-sd-size essential-btn" href="#"> Join us now </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Call To Action --> 
-
-        <!-- Icon Box Area Start -->
-        <div class="brook-icon-boxes-area ptb--100">
+    <section>
+        <div class="sec-space no-bottom">
             <div class="container">
                 <div class="row">
-                    <!-- Single Icon Box Start -->
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                        <div class="icon-box text-center no-border bg-transparant vibrate-style">
-                            <div class="inner">
-                                <div class="icon">
-                                    <i class="fa fa-drum"></i>
-                                </div>
-                                <div class="content">
-                                    <h5 class="heading heading-h5">Exceptional</h5>
-                                    <p>We create an exceptional experience delighting employee and customer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Icon Box End -->
-                    <!-- Single Icon Box Start -->
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                        <div class="icon-box text-center no-border bg-transparant vibrate-style">
-                            <div class="inner">
-                                <div class="icon">
-                                    <i class="fa fa-cloud"></i>
-                                </div>
-                                <div class="content">
-                                    <h5 class="heading heading-h5"> Genuine</h5>
-                                    <p>We are sincere, reliable and trustworthy about our products</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Icon Box End -->
-                    <!-- Single Icon Box Start -->
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                        <div class="icon-box text-center no-border bg-transparant vibrate-style">
-                            <div class="inner">
-                                <div class="icon">
-                                    <i class="fa fa-fingerprint"></i>
-                                </div>
-                                <div class="content">
-                                    <h5 class="heading heading-h5"> Innovative</h5>
-                                    <p>We are creative and strive to connect new ideas with business realities</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Icon Box End -->
-                    <!-- Single Icon Box Start -->
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                        <div class="icon-box text-center no-border bg-transparant vibrate-style">
-                            <div class="inner">
-                                <div class="icon">
-                                    <i class="fa fa-bookmark"></i>
-                                </div>
-                                <div class="content">
-                                    <h5 class="heading heading-h5"> Focus on Impact</h5>
-                                    <p>We always solve the most important problems to have the biggest impact</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Icon Box End -->
-                </div>
-            </div>
-        </div>
-        <!-- Icon Box Area End -->
+                    <div class="col-lg-5">
+                        <div class="abt-resturant">
+                            <span class="text-theme theme-color fs-20 d-block mb-2"> Qulilita</span>
+                            <h2 class="h1 mb-3 font-weight-bold">Creemos Juntos</h2>
+                            <p class="pr-5 mb-4">Creamos algo que refleje tu personalidad, que sea auténtico y original.</p>
+                            <span class="font-weight-semibold mb-3 fs-20 d-block">CREA Y COMPARTE</span>
+                            <ul class="list-unstyled p-0 m-0">
 
-        <!-- Service Area Start -->
-        <div class="service-area bg_color--5 ptb--150 ptb-md--80 ptb-sm--60">
-            <div class="container">
-                <div class="row align-content-center">
-                    <div class="col-lg-6 col-12">
-                        <div class="bk-title--default text-start">
-                            <h5 class="heading-13 theme-color text-uppercase fw-500">Services</h5>
-                            <div class="bkseparator--30"></div>
-                            <h3 class="heading-40 fw-200">Full-service digital <br>  capabilities from end to end.</h3>
+                                <li class="fs-18 text-gray"><i class="flaticon-buy"></i>CREA
+                                </li>
+                                <li class="fs-18 text-gray"><i class="flaticon-phone"></i>PERSONALIZA</li>
+                                <li class="fs-18 text-gray"><i class="flaticon-reload"></i>COMPARTE</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12 mt_md--30 mt_sm--30">
-                        <div class="modern-service-content wow move-up">
-                            <p>We create content and develop digital marketing experiences with elasticity to suit the shape and dimension of business goals and consumer expectations.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bk-blog-grid-area pt--70 pb--100 pt_md--80 pb_md--80 pb_sm--80 pt_sm--60 bg_color--5">
-                    <div class="container">
-
-                        <div class="row">
-
-                            <!-- Start Single Blog -->
-                            {% for categoria in object_list %}
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 move-up wow mt--30">
-                                <div class="blog-grid">
-                                    <div class="post-thumb">
-                                        <a href="{% url 'index:blog-detail' categoria.id %}">
-                                            <img src="{% static 'frontend/img/blog/portada-django.jpg' %}" alt="Django">
-                                        </a>
-                                    </div>
-                                    <div class="post-content">
-                                        <div class="post-inner">
-                                            <h5 class="heading heading-h5"><a href="{% url 'index:blog-detail' categoria.id %}">{{ categoria.name }}</a></h5>
-                                            <div class="post-meta">
-                                                <div class="post-date">{{ categoria.publish }}</div>
-                                                <div class="post-category"><a href="{% url 'index:blog-detail' categoria.id %}">Ver mas</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-lg-7">
+                        <div class="abt-imgs d-flex align-items-center">
+                            <div class="align-self-center">
+                                <figure class="mb-0 tilt-img">
+                                    <img src="{% static 'frontend/images/resources/abt-img1.jpg' %}" alt="">
+                                </figure>
                             </div>
-                            {% endfor %}
-                            <!-- End Single Blog -->
-
-
-                        </div>
-
-                    </div>
-                </div>
-
-                {% comment %} <div class="row mt--100 mt_md--50 mt_sm--30">
-                    <!-- Single SVG Icon Box Start -->
-                    <div class="col-xl-4 col-lg-6 col-md-6 mb_lg--30 mb_md--30 mb_sm--30">
-                        <div class="single-svg-icon-box">
-                            <div class="grid-overlay" style="background-image: url(img/service/service1.jpg)"></div>
-                            <div class="inner">
-                                <div class="svg-icon" id="svg-icon-1" data-svg-icon="img/icons/basic_accelerator.svg"></div>
-                                <div class="content">
-                                    <h5 class="heading heading-h5"> Digital Marketing</h5>
-                                    <p>Our Digital Marketing service includes: Drive traffic, build engagement and score meaningful conversions.</p>
-                                </div>
+                            <div class="align-self-start">
+                                <figure class="mb-0  tilt-img">
+                                    <img src="{% static 'frontend/images/resources/abt-img2.jpg' %}" alt="">
+                                </figure>
+                                <figure class="mb-0 tilt-img">
+                                    <img src="{% static 'frontend/images/resources/abt-img3.jpg' %}" alt="">
+                                </figure>
                             </div>
                         </div>
                     </div>
-                    <!-- Single SVG Icon Box End -->
-                    <!-- Single SVG Icon Box Start -->
-                    <div class="col-xl-4 col-lg-6 col-md-6 mb_lg--30 mb_md--30 mb_sm--30">
-                        <div class="single-svg-icon-box">
-                            <div class="grid-overlay" style="background-image: url(img/service/service2.jpg)"></div>
-                            <div class="inner">
-                                <div class="svg-icon" id="svg-icon-2" data-svg-icon="img/icons/basic_archive_full.svg"></div>
-                                <div class="content">
-                                    <h5 class="heading heading-h5"> Website Design & Development</h5>
-                                    <p>Our enterprise-level websites have to be smarter than the place or platform they play on.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single SVG Icon Box End -->
-                    <!-- Single SVG Icon Box Start -->
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="single-svg-icon-box">
-                            <div class="grid-overlay" style="background-image: url(img/service/service3.jpg)"></div>
-                            <div class="inner">
-                                <div class="svg-icon" id="svg-icon-3" data-svg-icon="img/icons/ecommerce_bag.svg"></div>
-                                <div class="content">
-                                    <h5 class="heading heading-h5"> Online Video</h5>
-                                    <p>Our production team creates all kinds of purposeful videos for use on websites, social media and beyond.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single SVG Icon Box End -->
-                </div> {% endcomment %}
-            </div>
-        </div>
-        <!-- Service Area End -->
-
-        <!-- Case Studis Area Start -->
-        <div class="case-studis-area pt--120 pt-md--80 pt-sm--60">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="brook-section-title text-center mb--45">
-                            <h6 class="heading-13 theme-color text-uppercase fw-500">Our case studies</h6>
-                            <div class="bkseparator--25"></div>
-                            <h2 class="heading-40 fw-200">Our projects make us proud</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="brook-element-carousel slick-arrow-center" data-slick-options='{
-                    "slidesToShow": 1, 
-                    "slidesToScroll": 1, 
-                    "arrows": true, 
-                    "infinite": true,
-                    "dots": false,
-                    "prevArrow": {"buttonClass": "slick-btn slick-prev", "iconClass": "fas fa-angle-left" },
-                    "nextArrow": {"buttonClass": "slick-btn slick-next", "iconClass": "fas fa-angle-right" }
-                }'>
-                <div class="col-12">
-                    <div class="row mt--30">
-                        <div class="col-xl-5 col-lg-6">
-                            <div class="case-slider-content">
-                                <div class="post-count">
-                                    01. 
-                                </div>
-                                <h6 class="heading headin-h6 theme-color wow move-up animate">Web Design</h6>
-                                <h3 class="heading-font line-height-1-5 wow move-up animate">Open lane - Modern dashboard from ThemeMove</h3>
-                                <p class="text">The key to this ThemeMove dashboard is that it clearly shows progress towards daily and monthly goals using bullet charts.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-6">
-                            <div class="image-wrap">
-                                <div class="image">
-                                    <div class="image">
-                                        <img src="{% static 'frontend/img/case-study/home-essential-case-study-image-01.png' %}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="row mt--30">
-                        <div class="col-xl-5 col-lg-6">
-                            <div class="case-slider-content">
-                                <div class="post-count">
-                                    02. 
-                                </div>
-                                <h6 class="heading headin-h6 theme-color wow move-up animate">Web Design</h6>
-                                <h3 class="heading-font line-height-1-5 wow move-up animate">ThemeMove Analyze</h3>
-                                <p class="text">Measure your social network performance, create brilliant reports in a few clicks, and get suggestions to improve your strategy.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-6">
-                            <div class="image-wrap">
-                                <div class="image">
-                                    <div class="image">
-                                        <img src="{% static 'frontend/img/case-study/home-essential-case-study-image-02.png' %}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="row mt--30">
-                        <div class="col-xl-5 col-lg-6">
-                            <div class="case-slider-content">
-                                <div class="post-count">
-                                    03. 
-                                </div>
-                                <h6 class="heading headin-h6 theme-color wow move-up animate">Web Design</h6>
-                                <h3 class="heading-font line-height-1-5 wow move-up animate">Marketing Automation Platform</h3>
-                                <p class="text">Our tool help marketers capture leads, nurture them further down the funnel, and analyze lead behavior and campaign performance.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-6">
-                            <div class="image-wrap">
-                                <div class="image">
-                                    <div class="image">
-                                        <img src="{% static 'frontend/img/case-study/home-essential-case-study-image-03.png' %}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- Case Studis Area End -->
-
-        <!-- Start Progress Area -->
-        <div class="service-progress-area ptb--100 ptb-md--80 ptb-sm--60">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="progress-thumbnail wow move-up text-lg-left text-center animate">
-                            <img src="{% static 'frontend/img/about/home-essential-image-01.jpg' %}" alt="Multipurpose">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 offset-xl-1 col-lg-6 plr_md--50 plr_sm--50 mt_md--30 mt_sm--30">
-                            <div class="service-content">
-                                <h3>A company's success is an ongoing stream of happiness</h3>
-                                <p>With the expertise in Web Development, our expert has a deep understanding of how the system work to provide excellent services.</p>
-                            </div>
-                            <div class="service-progress-inner">
-                                <!-- Start Progress Bar    -->
-                                <div class="progress-wrapper wow move-up animate">
-                                    <!-- Start Single Progress Charts -->
-                                    <div class="progress-charts">
-                                        <h6 class="heading heading-h6">UI/UX</h6>
-                                        <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 85%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">85%</span></div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Progress Charts -->
-
-                                    <!-- Start Single Progress Charts -->
-                                    <div class="progress-charts mt--45">
-                                        <h6 class="heading heading-h6">Ideas</h6>
-                                        <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 85%; visibility: visible; animation-duration: 0.7s; animation-delay: 0.5s; animation-name: fadeInLeft;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">85%</span></div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Progress Charts -->
-
-                                    <!-- Start Single Progress Charts -->
-                                    <div class="progress-charts mt--45">
-                                        <h6 class="heading heading-h6">Marketing</h6>
-                                        <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".8s" role="progressbar" style="width: 70%; visibility: visible; animation-duration: 0.8s; animation-delay: 0.8s; animation-name: fadeInLeft;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">70%</span></div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Progress Charts -->
-                                </div>
-                                <!-- End Progress Bar    -->
-                            </div>
-                        </div>
                 </div>
             </div>
         </div>
-        <!-- End Progress Area -->
+    </section>
 
-        <!-- Start Testimonial Area -->
-        <div class="brook-testimonial-area ptb--150 ptb-md--80 ptb-sm--60 bg_image--60 slick-arrow-hover">
+    <section>
+        <div class="sec-space">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-12">
-                        <div class="brook-section-title text-center mb--70">
-                            <h6 class="heading-13 theme-color text-uppercase fw-500">TESTIMONIALS</h6>
+                        <div class="sec-heading text-center">
+                            <span class="text-theme fs-20 d-block mb-2">Nuestros Productos</span>
+                            <h2 class="text-uppercase fs-45 mb-40">Creemos Juntos</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="testimonial-wrapper testimonial-active--single--arrow">
-                            <div class="testimonial-container pb--60">
-                                <!-- Start Single Testimonial -->
-                                <div class="testimonial testimonial--creative">
+                <div class="row justify-content-center">
 
-                                    <div class="brook-element-carousel nav-content  slick-arrow-center slick-dots-bottom "
-                                        data-slick-options='{
-                                            "spaceBetween": 15, 
-                                            "slidesToShow": 1, 
-                                            "slidesToScroll": 1, 
-                                            "arrows": false, 
-                                            "infinite": true,
-                                            "dots": true,
-                                            "focusOnSelect": true,
-                                            "prevArrow": {"buttonClass": "slick-btn slick-prev", "iconClass": "fas fa-angle-left" },
-                                            "nextArrow": {"buttonClass": "slick-btn slick-next", "iconClass": "fas fa-angle-right" }
-                                        }'>
-                                        <!-- Start Single Testimonial -->
-                                        <div class="testimonial testimonial_style--4">
-                                            <div class="content">
-                                                <p>Designing is not intended for talented people. It’s for everyone. What you need to do is just to open up your mind to all possibilities.</p>
-                                                <div class="testimonial-info">
-                                                    <div class="post-thumbnail">
-                                                        <img src="{% static 'frontend/img/testimonial/clint-1/clint-1.jpg' %}" alt="clint image">
-                                                    </div>
-                                                    <div class="clint-info">
-                                                        <h6>Harley Mills</h6>
-                                                        <span>PR Officer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Testimonial -->
-                                        <!-- Start Single Testimonial -->
-                                        <div class="testimonial testimonial_style--4">
-                                            <div class="content">
-                                                <p>Never stop learning. Consider yourself as a life-long learner and try your best to learn as much as you can, you definitely will succeed.</p>
-                                                <div class="testimonial-info">
-                                                    <div class="post-thumbnail">
-                                                        <img src="{% static 'frontend/img/testimonial/clint-1/clint-2.jpg' %}" alt="clint image">
-                                                    </div>
-                                                    <div class="clint-info">
-                                                        <h6>Lennie Paner</h6>
-                                                        <span>MMs Agency</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Testimonial -->
-                                        <!-- Start Single Testimonial -->
-                                        <div class="testimonial testimonial_style--4">
-                                            <div class="content">
-                                                <p>You can’t succeed if you just do what others do and follow the well-worn path. You need to create a new and original path for yourself.</p>
-                                                <div class="testimonial-info">
-                                                    <div class="post-thumbnail">
-                                                        <img src="{% static 'frontend/img/testimonial/clint-1/clint-3.jpg' %}" alt="clint image">
-                                                    </div>
-                                                    <div class="clint-info">
-                                                        <h6>Harley Mills</h6>
-                                                        <span>PR Officer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Testimonial -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article>
+                            <div class="blog-item">
+                                <figure class="mb-0 position-relative">
+                                    <img src="{% static 'frontend/images/resources/news1.jpg' %}" alt="">
+                                    <div class="text-center">
+                                        <a href="blog-detail.html" title="" class="theme-btn-secondary">learn
+                                            More<span></span></a>
                                     </div>
-
+                                </figure>
+                                <div class="blog-desc mx-3 position-relative">
+                                    <div class="blog-txt bg-white">
+                                        <a href="javascript:void(0)" title="" class="blog-date fs-16">20 July 2021</a>
+                                        <h3 class="fs-22 mt-2"><a href="blog-detail.html" title="">Fast-food chain, go behind
+                                                the scenes</a></h3>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet dieu ilisicing elit. Ea
+                                            ratione opius dlil ilm or maion.</p>
+                                    </div>
+                                    <div class="blog-meta d-flex flex-row">
+                                        <a class="text-white fs-15" href="javascript:void(0)" title=""><i
+                                                class="flaticon-comment"></i>No Comments</a>
+                                        <a class="text-white fs-15 ml-auto" href="javascript:void(0)" title=""><i
+                                                class="flaticon-heart"></i>22 Likes</a>
+                                    </div>
                                 </div>
-                                <!-- End Single Testimonial -->
                             </div>
-                        </div>
+                        </article>
                     </div>
+                
                 </div>
             </div>
         </div>
-        <!-- End Testimonial Area -->
+    </section>
 
-        <!-- Pricing Table Area Start -->
-        <div class="brook-pricing-table-area ptb--150 ptb-md--80 ptb-sm--80 bg_color--5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="brook-section-title text-center mb--45">
-                                <h6 class="heading-13 theme-color text-uppercase fw-500">Pricing table</h6>
-                                <div class="bkseparator--25"></div>
-                                <h2 class="heading-40 fw-200">Buy Brook and get access to <br> premium plugins for free.</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <!-- Start Single Pricing Table -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="procing-wrap price-style-3 pt--40 move-up wow">
-                                <div class="procing-box">
-                                    <div class="header">
-                                        <div class="price-area">
-                                            <h5 class="title">Basic Plan</h5>
-                                            <div class="price-wrap d-flex">
-                                                <h3 class="currenct">$</h3>
-                                                <h3 class="">3.99</h3>
-                                            </div>
-                                            <h6 class="period">Per Month, AUD Inc GST.</h6>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <!-- Start Single List -->
-                                        <div class="bk-list--2">
-                                            <div class="list-header with-ckeck item-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">5k Searchable messages</h6>
-                                                </div>
-                                            </div>
-                                            <div class="list-header with-ckeck item-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">10 custom Apps/services</h6>
-                                                </div>
-                                            </div>
-
-                                            <div class="list-header with-ckeck item-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">Minimum 3 users, max 10 users</h6>
-                                                </div>
-                                            </div>
-
-                                            <div class="list-header with-ckeck item-not-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">1 Voice and video call</h6>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- End Single List -->
-                                    </div>
-                                    <div class="footer mt--40">
-                                        <a class="brook-btn bk-btn-secondary-border btn-sd-size space-between btn-essential" href="#">Join Starter Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Pricing Table -->
-
-                        <!-- Start Single Pricing Table -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="procing-wrap price-style-3 pt--40 move-up wow">
-                                <div class="procing-box">
-                                    <div class="header">
-                                        <div class="price-area">
-                                            <div class="header-title">
-                                                <div class="pricing-feature-mark"> Popular</div>
-                                                <h5 class="title">Value Plan</h5>
-                                            </div>
-                                            <div class="price-wrap d-flex">
-                                                <h3 class="currenct">$</h3>
-                                                <h3 class="">10.99</h3>
-                                            </div>
-                                            <h6 class="period">Per Month, AUD Inc GST.</h6>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <!-- Start Single List -->
-                                        <div class="bk-list--2">
-                                            <div class="list-header with-ckeck item-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">5k Searchable messages</h6>
-                                                </div>
-                                            </div>
-                                            <div class="list-header with-ckeck item-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">10 custom Apps/services</h6>
-                                                </div>
-                                            </div>
-
-                                            <div class="list-header with-ckeck item-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">Minimum 3 users, max 10 users</h6>
-                                                </div>
-                                            </div>
-
-                                            <div class="list-header with-ckeck item-not-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">1 Voice and video call</h6>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- End Single List -->
-                                    </div>
-                                    <div class="footer mt--40">
-                                        <a class="brook-btn bk-btn-secondary-border btn-sd-size space-between btn-essential" href="#">Join Starter Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Pricing Table -->
-
-                        <!-- Start Single Pricing Table -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="procing-wrap price-style-3 pt--40 move-up wow">
-                                <div class="procing-box">
-                                    <div class="header">
-                                        <div class="price-area">
-                                            <h5 class="title">Premium Plan</h5>
-                                            <div class="price-wrap d-flex">
-                                                <h3 class="currenct">$</h3>
-                                                <h3 class="">3.99</h3>
-                                            </div>
-                                            <h6 class="period">Per Month, AUD Inc GST.</h6>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <!-- Start Single List -->
-                                        <div class="bk-list--2">
-                                            <div class="list-header with-ckeck item-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">5k Searchable messages</h6>
-                                                </div>
-                                            </div>
-                                            <div class="list-header with-ckeck item-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">10 custom Apps/services</h6>
-                                                </div>
-                                            </div>
-
-                                            <div class="list-header with-ckeck item-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">Minimum 3 users, max 10 users</h6>
-                                                </div>
-                                            </div>
-
-                                            <div class="list-header with-ckeck item-not-available">
-                                                <div class="marker"></div>
-                                                <div class="title-wrap">
-                                                    <h6 class="heading heading-h5">1 Voice and video call</h6>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- End Single List -->
-                                    </div>
-                                    <div class="footer mt--40">
-                                        <a class="brook-btn bk-btn-secondary-border btn-sd-size space-between btn-essential" href="#">Join Starter Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Pricing Table -->
-
-                    </div>
-                    <div class="row mt--50">
-                        <div class="col-12">
-                            <div class="more-pricing">
-                                <p>Know more about pricing details. <a href="#">Check it now</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <!-- Pricing Table Area End -->
-
-        <!-- Contact Area Start -->
-        <div class="contact-area ptb--100 ptb-md--80 ptb-sm--60">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="contact-wrap">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="brook-section-title text-center mb--40">
-                                        <h3 class="heading heading-h3 fw-200">Send us a message</h3>
-                                        <p class="mt--15">Feel free to reach us if you need any assistance.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="contact-form bg-input-one" >
-                                        <form id="contact-form" action="http://whizthemes.com/shohel/php/mail.php">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <input name="con_name" type="text" placeholder="Name *">
-                                                </div>
-        
-                                                <div class="col-lg-12 mt--30">
-                                                    <input name="con_email" type="email" placeholder="Email *">
-                                                </div>
-        
-                                                <div class="col-lg-12 mt--30">
-                                                    <input type="text" placeholder="Phone number">
-                                                </div>
-        
-                                                <div class="col-lg-12 mt--30">
-                                                    <textarea name="con_message" placeholder="Your message"></textarea>
-                                                </div>
-        
-                                                <div class="col-lg-12 mt--30">
-                                                    <input type="submit" value="Submit message">
-                                                    <p class="form-messege"></p>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 offset-xl-1 col-lg-6 mt_md--30 mt_sm--30">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="brook-section-title text-start mb--40">
-                                    <h3 class="heading heading-h3 fw-200">Contact us</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="googlemap">
-                            <div class="ht-gmap3" id="htmap2" data-height="275" data-width="100%"
-                                data-zoom_enable="" data-zoom="10" data-map_type="roadmap" data-map_style="style11"></div>
-                        </div>
-                        <div class="row mt--40">
-                            <!-- Single Contact Address -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-contact-address">
-                                    <h5 class="title">Address</h5>
-                                    <div class="address mt--10">
-                                        <p>2005 Stokes Isle Apt. 896, <br>
-                                            Vacaville 10010, USA</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Contact Address -->
-
-                            <!-- Single Contact Address -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-contact-address">
-                                    <h5 class="title">information</h5>
-                                    <div class="mail-phone">
-                                        <p><a href="#">info@yourdomain.com</a></p>
-                                        <p><a href="#">(+68) 120034509</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Contact Address -->
-
-                            <!-- Single Contact Address -->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-contact-address">
-                                    <h5 class="title">Address</h5>
-                                    <div class="social-share">
-                                        <p><a href="#">Facebook</a></p>
-                                        <p><a href="#">Twitter</a></p>
-                                        <p><a href="#">Instagram</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Contact Address -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact Area End -->
-
-        <!-- Start Call To Action -->
-        <div class="brook-call-to-action bg_image--61 ptb--120 ptb-md--80 ptb-sm--60">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-12 col-12">
-                        <div class="call-content vertical-call-toaction text-center essential-cta">
-                            <h3 class="text-white wow move-up">In love with what we do?</h3>
-                            <p class="text-white wow move-up">Let's work together to have new approaches, new ideas and new ways of doing things.</p>
-                            <div class="spacing"></div>
-                            <div class="call-btn text-center wow move-up">
-                                <a class="brook-btn bk-btn-green text-theme btn-sd-size" href="#"> GET IN TOUCH </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Call To Action -->
-
-    </main>
 {% endblock content %}

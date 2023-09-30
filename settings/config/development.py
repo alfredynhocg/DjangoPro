@@ -9,7 +9,7 @@ ALLOWED_HOSTS = []
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'q',
+        'NAME': 'qulilita',
         'USER': 'root',
         'PASSWORD': '',
         'PORT': '3306'

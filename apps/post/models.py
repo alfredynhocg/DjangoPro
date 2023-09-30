@@ -18,6 +18,8 @@ class Post(models.Model):
         Categoria, 
         on_delete = models.CASCADE
     )
+
+    image = models.ImageField(upload_to='tazas/')
     
     publish = models.BooleanField(
         default = True

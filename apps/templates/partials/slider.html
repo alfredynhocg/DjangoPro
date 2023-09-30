@@ -1,49 +1,26 @@
 {% load static i18n %}
 
-        <div class="brook-hero-nav-slider-area">
-            <div class="brook-element-carousel slick-arrow-center slick-arrow-rounded lr-0"
-            data-slick-options='{ 
-            "slidesToShow": 1, 
-            "slidesToScroll": 1, 
-            "arrows": true, 
-            "infinite": true,
-            "dots": false,
-            "prevArrow": {"buttonClass": "slick-btn slick-prev", "iconClass": "ion ion-ios-arrow-back" },
-            "nextArrow": {"buttonClass": "slick-btn slick-next", "iconClass": "ion ion-ios-arrow-forward" }
-        }'
-        >
-
-                    <div class="hero-item bg-image" data-bg="{% static 'frontend/img/slider/essential/essential1.webp' %}">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-    
-                                    <div class="hero-content-3 left">
-                                        <h3>We're here to level <br> up your online <br> presence.</h3>
-                                        <h6>A Creative Agency like no other. </h6>
-                                        <a class="brook-btn btn-sd-size space-between btn-essential btn" href="#">Learn More</a>
-                                    </div>
-    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="hero-item bg-image" data-bg="{% static 'frontend/img/slider/essential/Sh.jpg' %}">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-    
-                                    <div class="hero-content-3 left">
-                                        <h3>We're here to level <br> up your online <br> presence.</h3>
-                                        <h6>A Creative Agency like no other. </h6>
-                                        <a class="brook-btn btn-sd-size space-between btn-essential btn" href="#">Learn More</a>
-                                    </div>
-    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
+<section class="main-slider2 position-relative">
+    <div class="kenburn-slider owl-carousel">
+        <div class="kenburn-slide">
+            <div class="parallax blk-overlay slide-image"
+                style="background-image: url({% static 'frontend/images/slide-image.jpg' %});"></div>
         </div>
+        <div class="kenburn-slide">
+            <div class="parallax blk-overlay slide-image"
+                style="background-image: url({% static 'frontend/images/slide-image.jpg' %});"></div>
+        </div>
+        <div class="kenburn-slide">
+            <div class="parallax blk-overlay slide-image"
+            style="background-image: url({% static 'frontend/images/slide-image.jpg' %});"></div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="kenburn-text text-center">
+            <h3 class="position-relative text-white" style="font-family: ITC Eras">Creemos Juntos</h3>
+            <h2 class="text-theme text-white" style="font-family: FG Ellinor W00 Regular">Qulilita</h2>
+            <p class="mb-0 text-white" style="font-family: 'Montserrat', sans-serif;">"Tu taza, tu estilo. 🎨 Personaliza con nosotros y disfruta de cada sorbo con tu diseño único."</p>
+        </div>
+    </div>
+</section>
