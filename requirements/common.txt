@@ -12,9 +12,10 @@ django-flat-theme==1.1.4
 # --------------------
 Pillow==9.2.0
 
-# >> DataBases
+# >> DataBases / mysql fork
 # --------------------
-psycopg2==2.9.3
+# psycopg2==2.9.3
+mysqlclient==2.2.0
 
 # >> Time Zone
 # --------------------
@@ -41,3 +42,18 @@ requests==2.28.1
 # >> Celery
 # --------------------
 celery==5.2.7
+
+
+# >> Django Import Export
+# --------------------
+django-import-export==3.3.1
+
+
+# >> Django Seed
+# --------------------
+django-seed==0.3.1
+
+
+# >> drf-yasg
+# --------------------
+drf-yasg==1.21.7
