@@ -20,7 +20,7 @@ class MenuMixin(object):
 
 class LandingView(ListView):
 	template_name = "index.html"
-	model = Categoria
+	model = Post
  
 class ContactView(TemplateView):
     template_name = "frontend/contacto.html"

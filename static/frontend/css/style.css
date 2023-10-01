@@ -256,7 +256,7 @@ select.minimal {
   font-weight: 700;
 }
 .theme-btn-secondary:hover span {
-  background-color: #41c466;
+  background-color: #3333ff;
 }
 .theme-btn-secondary:hover {
   color: #fff;

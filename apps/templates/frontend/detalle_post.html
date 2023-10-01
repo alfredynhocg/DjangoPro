@@ -5,14 +5,29 @@
     <meta property="og:url" content="django project"/>
     <meta property="og:type"        content="Blog Django " />
     <meta property="og:title"       content="{{ object.title }}" />
-    <meta property="og:description" content="projecto django del curso" />
+    <meta property="og:description" content="Qulilita, Creemos Juntos" />
     <meta property="og:image"       content="{% static 'frontend/img/blog/blog-django.jpg' %}" />
 {% endblock meta %}
 
 {% load static i18n %}
-{% block title %}<title>Detalle Post</title> {% endblock title %}
+{% block title %}<title>{{ object.title }}</title> {% endblock title %}
 
 {% block content %}
+
+    <section class="position-relative top-banner bg-gray">
+        <div class="bg-fixed" style="background-image: url({% static 'frontend/images/banner-qulilita.jpg' %});"></div>
+        <div class="top-banner-content text-center">
+            <div class="baner-name">
+                <h2 class="fs-50 text-uppercase" style="color: #FFFFFF;">Productos Qulilita</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center p-0 mb-0">
+                        <li class="breadcrumb-item text-gray fs-18 fm-arimo"><a href="{% url 'index:view-landing' %}" style="color:#FFFFFF;">INICIO</a></li>
+                        <li class="breadcrumb-item active text-theme fs-18 fm-arimo"><a href="#" style="color:#FFFFFF;">{{ object.title }}</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
 
     <div class="breadcaump-area pt--400 pt_lg--300 pt_md--250 pt_sm--200 pb--100 bg_image--8 breadcaump-title-bar breadcaump-title-white">
         <div class="container">
@@ -33,20 +48,17 @@
 
     <main class="page-content">
 
-        <!-- Start Blog Details -->
         <div class="brook-blog-details-area bg_color--1 pt--90 pb--150">
             <div class="container">
                 <div class="row">
 
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--60 mt_sm--60 order-2 order-lg-1">
-                        <!-- Start Sidebar Area -->
                         <div class="blog-sidebar-container">
                             <div class="blog-sidebar-wrapper">
 
-                                <!-- Start Single Widget -->
                                 <div class="bl-sidebar search">
                                     <h5 class="widget-title">Facebook</h5>
-                                    <div class="fb-page" data-href="https://www.facebook.com/incosbot" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/incosbot" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/incosbot">IncosBot</a></blockquote></div>
+                                    <div class="fb-page" data-href="https://www.facebook.com/Qulilita" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/incosbot" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/incosbot">IncosBot</a></blockquote></div>
                                 </div>
 
                             </div>
@@ -57,7 +69,6 @@
                     <div class="col-lg-8 col-md-12 col-sm-12 col-12 order-1 order-lg-2">
                         <div class="blog-details-wrapper">
                             <article class="blog-post standard-post">
-                                <!-- Start Header -->
                                 <div class="header mb--40 text-center">
                                     <h3 class="heading heading-h3 font-32">{{ object.title }}</h3>
                                     <div class="post-meta mt--20">
@@ -65,11 +76,10 @@
                                         <div class="post-category"><a href="#">{{ object.status }}</a></div>
                                     </div>
                                 </div>
-                                <!-- Start Thumbnail -->
                                 <div class="thumbnail mb--60">
-                                    <img class="w-100" src="{% static 'frontend/img/blog/blog-django.jpg' %}" alt="Multipurpose">
+                                    <img class="w-100" src="{{ object.image.url }}" alt="Multipurpose">
                                 </div>
-                                <!-- Start Content -->
+
                                 <div class="content basic-dark2-line-1px pb--50 mb--35">
 
                                     <div class="bk-quote-content">
@@ -99,7 +109,6 @@
                 </div>
             </div>
         </div>
-        <!-- End Blog Details -->
 
     </main>
 
@@ -120,7 +129,7 @@
         */
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
-        s.src = 'https://cursodjango.disqus.com/embed.js';
+        s.src = 'https://qulilita.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
         })();
