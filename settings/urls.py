@@ -37,8 +37,12 @@ urlpatterns = [
     re_path(r'^admin/', admin.site.urls),
     re_path(r'^', include(('apps.home.urls','index'),namespace='index')),
     re_path(r'^', include(('apps.category.urls','category'),namespace='category')),
+    #re_path(r'^', include(('apps.product.urls','product'),namespace='product')),
     re_path(r'^', include(('apps.post.urls','post'),namespace='post')),
+    re_path(r'^api/', include(('apps.agente.api','api-agente'),namespace='api')),
     re_path(r'^api/', include(('apps.category.api','api-category'),namespace='api')),
+    re_path(r'^api/', include(('apps.product.api','api-product'),namespace='api')),
+    re_path(r'^api/', include(('apps.product.urls','api-reporte'),namespace='api')),
     re_path(r'^docs/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     re_path(r'^redocs/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

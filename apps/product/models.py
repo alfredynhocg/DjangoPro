@@ -1,6 +1,7 @@
 from django.db import models
 from apps.category.models import Categoria
-
+from .validators import validate_minimum_size
+from .validators import validate_greater_than_zero
 
 class Product(models.Model):
     name = models.CharField(
@@ -14,13 +15,15 @@ class Product(models.Model):
     cost = models.DecimalField(
         help_text = 'Costo del producto', 
         max_digits = 5, 
-        decimal_places = 2
+        decimal_places = 2,
+         validators=[validate_greater_than_zero],
     )
     
     price = models.DecimalField(
         help_text = 'Precio de venta',
         max_digits = 5, 
-        decimal_places = 2
+        decimal_places = 2,
+        validators=[validate_greater_than_zero],
     )
     
     stock = models.IntegerField(
@@ -32,7 +35,8 @@ class Product(models.Model):
     )
     
     image = models.ImageField(
-        upload_to = 'product'
+        upload_to = 'product',
+        validators=[validate_minimum_size(width=98, height=98)],
     )
     
     document = models.FileField(
