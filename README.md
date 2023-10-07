@@ -29,6 +29,11 @@
 
 	- python manage.py createsuperuser --username=django --email=django@project.com --settings=settings.config.development
 
+### Ver las rutas (urls) del proyecto
+
+  - python manage.py show_urls --settings=settings.config.development
+  - o abrir el archivo rutas.txt
+
 ### Django Constance
 
 python manage.py seed category --settings=settings.config.development --number=100 

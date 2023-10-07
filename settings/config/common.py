@@ -28,6 +28,7 @@ THIRD_PARTY_APPS = (
     'import_export',  
     'django_seed',
     'drf_yasg',
+    'django_extensions',
 )
 
 # Librerias y funcionadalidades propias

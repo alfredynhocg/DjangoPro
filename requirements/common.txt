@@ -21,6 +21,9 @@ mysqlclient==2.2.0
 # --------------------
 # pytz==2018.3
 
+# >> Jjango Extensions
+# --------------------
+django-extensions==3.2.3
 
 # >> Django Rest
 # --------------------
