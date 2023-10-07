@@ -1,28 +1,35 @@
-## OpenBackend
+## Proyecto Diplomado
 
-**OpenStack** Backend Project
+**Full Stack** Proyecto Django
 ### Tecnologías
 
   * [Django](https://www.djangoproject.com/)
-  * [Postgres](https://www.postgresql.org/)
+  * [MariaDB](https://mariadb.org/)
+  * [Python](https://www.python.org/)
+
+### Integrantes del Grupo
+
+  - `Milenka Susan Espinal Copa`
+  - `Patty Castro Carlo`
+  - `Francisco Humberto Flores Huanca`
+  - `Luis Angel Quispe Limachi`
+  - `Alfredo Callizaya Gutierrez`
 
 
-### Crear Base de Datos en postgres
+### Comandos para Levantar el Proyecto
 
-  - `sudo su postgres`
-  - `psql -c "DROP DATABASE dev_app"`
-  - `psql -c "DROP USER dev_user"`
-  - `psql -c "CREATE USER dev_user WITH ENCRYPTED PASSWORD 'XXXYYYZZZ'"`
-  - `psql -c "CREATE DATABASE dev_app WITH OWNER dev_user"`
+  - crear el entorno virtual (antes deben instalar virtualenvm eso se instala con "pip install virtualenv")/ python -m virtualenv env   
+  - activar el entorno virtual / cd env , cd Scripts/, activate.bat
+  - una ves activo el env instalar los paquetes con / pip install -r common.txt
+  - levantar el proyecto con Makefile (puedes instalar makefile con linux con apt install make o en windows con chocolatey) , o en todo caso con el comando /: python manage.py runserver --settings=settings.config.development
+  - las migraciones se hacen con el comando: 	python manage.py makemigrations --settings=settings.config.development
+    python manage.py migrate --settings=settings.config.development
 
+### Crear super usuario
 
+	- python manage.py createsuperuser --username=django --email=django@project.com --settings=settings.config.development
 
-### Crear Install redis server / Django Constance
-
-	- sudo apt-get install redis-server
-
-DevZone es soportado por [@alfredynho](alfredynho.cg@gmail.com).
-
+### Django Constance
 
 python manage.py seed category --settings=settings.config.development --number=100 
 
